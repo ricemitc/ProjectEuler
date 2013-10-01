@@ -32,12 +32,6 @@ public class Problem10 {
 			//i assumed to be prime until proved composite
 			isPrime = true;
 			
-			if((i>17) && (i%2==0 || i%3==0 || i%5==0 || i%7==0 || i%11==0  || i%13==0  || i%17==0)) {
-				//i is composite, continue to next i
-				continue;
-			}
-			else {
-				//else i may be prime, iterate and test for prime
 				//Only need to loop up to square root of i
 				for(int j=2; j<=Math.sqrt(i); j++){
 					
@@ -52,8 +46,8 @@ public class Problem10 {
 					sumOfPrimes += i;
 				}
 			}
-		}
 		
-		System.out.println("Sum of primes: "+sumOfPrimes);
+			System.out.println("Sum of primes: "+sumOfPrimes);
+		}
 	}
-}
+
